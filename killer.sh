@@ -5,7 +5,7 @@ dir='~'
 log_file=/dev/stdout
 
 function log {
-    printf "[$(date --rfc-3339=seconds)]: $*\n" > $log_file
+    printf "[$(date --rfc-3339=seconds)]: $*\n" >> $log_file
 }
 
 log "==========================="
