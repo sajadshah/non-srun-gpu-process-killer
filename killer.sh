@@ -27,7 +27,7 @@ for jid in $slurm_job_ids; do
     fi
     log "[slurm] pids of job $jid : " $jid_pids
 done;
-log "[slurm] pids registered in slurm (running with srun): "
+log "[slurm] pids registered in slurm (running with srun): " $slurm_pids
 
 processes_to_be_killed=''
 for pid in $gpu_pids; do
